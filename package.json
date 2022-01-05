@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -26,11 +27,11 @@
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^7.0.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test"
+      "pre-commit": "npm test"
     }
   }
 }
