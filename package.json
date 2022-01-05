@@ -1,0 +1,36 @@
+{
+  "name": "huskydemo",
+  "version": "1.0.0",
+  "description": "demo for husky hooks",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meghna25mv/husky.git"
+  },
+  "keywords": [
+    "husky"
+  ],
+  "author": "meghna verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meghna25mv/husky/issues"
+  },
+  "homepage": "https://github.com/meghna25mv/husky#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "jest": "^27.4.6",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  }
+}
